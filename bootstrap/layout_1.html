@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 
-<html>
+<htnl>
 
 <head>
     
     <meta charset="utf-8"/>
     <title>Layout 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/custom_theme.css" />
     
     <style>
     
         *{ outline: white 8px solid }
         
-        .blue{
+        .blue {
             background-color: #3FB4FF;
             height: 50px;
         }
-        
-        /* xs devices */
+        .green{
+            background-color: #a6d800;
+            height: 150px;
+        }
+        .orange{
+            background-color: #ffae2e;
+            height: 100px;
+        }
+        .grey{
+            background-color: #c4c4c4;
+            height: 50px;
+        }
+    
+    </style>
+    
+</head>
+    
+<body>
+    
+    <style>
+            /* xs devices */
         body { background-color: red }
         
         /* sm devices */
@@ -38,26 +58,34 @@
         
         /* xl devices */
         @media (min-width: 1200px) {
-            body { background-color: blue }
+            body { background-color: cyan}
         }
-    
+        
     </style>
-    
-</head>
-    
-<body>
     
     <div class="container">
     
         <div class="row">
         
-            <div class="col-md-blue"></div>
-            <div class="col-md-blue"></div>
+            <div class="col-md-6 blue"></div>
+            <div class="col-md-6 blue"></div>
         
+            <div class="col-md-12 green"></div>
+            
+            <div class="col-md-4 orange"></div>
+            <div class="col-md-4 orange"></div>
+            <div class="col-md-4 orange"></div>
+            
+            <div class="col-md-3 grey"></div>
+            <div class="col-md-3 grey"></div>
+            <div class="col-md-3 grey"></div>
+            <div class="col-md-3 grey"></div>
+            
         </div>
     
     </div>
 
+
 </body>
 
-</html>
+</htnl>
